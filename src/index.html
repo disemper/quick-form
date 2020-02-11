@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <title>FormEasy</title>
+  <style>
+    .form {
+      max-width: 36rem;
+      margin: 40px auto;
+      padding: 20px;
+      border: 1px solid lightgray;
+    }
+    .form__error-message {
+      display: block;
+      margin-top: 2px;
+      font-size: 11px;
+      color: red;
+    }
+    .form__field-wrapper {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+    <div class="container">
+      <form class="form" action="http://www.mocky.io/v2/5e37de773100000e00d37cc2" method="PUT" novalidate>
+        <input type="hidden" name="csrfmiddlewaretoken" value="h1fycC0oFAbZN5O7d8bXqCHLhaJgIv5ZCoNq4utOdUbO5euNP8bwqeEK6Hf0YYhr">
+        <label for="name">Введите Ваше имя*</label>
+        <input class="form-control" type="text" name="name" id="name" placeholder="Name" minlength="2" required>
+        <label for="email">Введите Ваш email*</label>
+        <input  class="form-control" type="text" name="email" id="email" placeholder="your@email.com" minlength="3"
+                required>
+        <label for="phone">Введите номер телефона*</label>
+        <input class="form-control" type="text" name="phone" id="phone" placeholder="+7000 000 00 00" required>
+        <label for="password-1">Введите пароль</label>
+        <input class="form-control" type="password" name="password-1" id="password-1" placeholder="***" required>
+        <label for="password-2">Введите пароль еще раз</label>
+        <input class="form-control" type="password" name="password-2" id="password-2" placeholder="***" required>
+        <label for="message">Введите Текст сообщения</label>
+        <textarea class="form-control" name="message" id="message"> </textarea>
+        <button type="submit" class="form__button">Send</button>
+      </form>
+
+      <hr>
+
+      <form class="form" action="http://www.mocky.io/v2/5e317a073200004c00888572" method="PUT" novalidate>
+        <input type="hidden" name="csrfmiddlewaretoken" value="wqeqwwewqeFAbZN5O7d8bXqCHLhaJeadsdsapqkemcbsiUHensdiwqewhr">
+        <label for="name">Ответ 1*</label>
+        <input class="form-control" type="text" name="Answer-1" placeholder="Answer 1" minlength="5" required>
+        <label for="name">Ответ 2</label>
+        <input class="form-control" type="text" name="Answer-2" placeholder="Answer 2">
+        <input type="checkbox" name="Checkbox-1" id="checkbox-1">
+        <label for="checkbox-1">
+          Согласен с условиями обработки персональных данных
+        </label>
+        <button type="submit" class="form__button">Enter</button>
+      </form>
+    </div>
+
+<!-- scripts -->
+<script src="js/jquery-3.4.0.min.js"></script>
+<script src="js/jquery.quick-form.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+
+
+</html>
